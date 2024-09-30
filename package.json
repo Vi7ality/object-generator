@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index"
   },
   "devDependencies": {
     "chai": "^5.1.1",
