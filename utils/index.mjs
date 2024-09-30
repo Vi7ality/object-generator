@@ -1,26 +1,3 @@
-// const generateDataFromSchema = require("./generateDataFromSchema");
-// const generateAnyOf = require("./generateAnyOf");
-// const generateInteger = require("./generateInteger");
-// const generateArray = require("./generateArray");
-// const generateBoolean = require("./generateBoolean");
-// const generateEnum = require("./generateEnum");
-// const generateObject = require("./generateObject");
-// const generateString = require("./generateString");
-// const parseSchema = require("./parseSchema");
-
-// console.log("utils", typeof generateDataFromSchema);
-
-// module.exports = {
-//   generateDataFromSchema,
-//   generateAnyOf,
-//   generateInteger,
-//   generateArray,
-//   generateBoolean,
-//   generateEnum,
-//   generateObject,
-//   generateString,
-//   parseSchema,
-// };
 import { generateDataFromSchema } from "./generateDataFromSchema.mjs";
 import { generateAnyOf } from "./generateAnyOf.mjs";
 import { generateInteger } from "./generateInteger.mjs";

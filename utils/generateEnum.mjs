@@ -3,5 +3,3 @@ export function generateEnum(schema) {
   const randomIndex = Math.floor(Math.random() * enumValues.length);
   return enumValues[randomIndex];
 }
-
-// module.exports = generateEnum;

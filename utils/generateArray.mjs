@@ -1,10 +1,5 @@
-// const generateDataFromSchema = require("./generateDataFromSchema");
-// const generateString = require("./generateString");
-
 import { generateDataFromSchema } from "./generateDataFromSchema.mjs";
 import { generateString } from "./generateString.mjs";
-
-// console.log("arr", typeof generateString);
 
 export function generateArray(schema, rootSchema) {
   const minItems = schema.minItems || 1;
@@ -20,5 +15,3 @@ export function generateArray(schema, rootSchema) {
 
   return result;
 }
-
-// module.exports = generateArray;

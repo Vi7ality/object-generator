@@ -14,5 +14,3 @@ export function generateString(schema) {
   }
   return result;
 }
-
-// module.exports = generateString;

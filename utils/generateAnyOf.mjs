@@ -1,5 +1,3 @@
-// const generateDataFromSchema = require("./generateDataFromSchema");
-
 import { generateDataFromSchema } from "./generateDataFromSchema.mjs";
 
 export function generateAnyOf(schema, rootSchema) {
@@ -12,5 +10,3 @@ export function generateAnyOf(schema, rootSchema) {
 
   return generateDataFromSchema(chosenSchema, rootSchema);
 }
-
-// module.exports = generateAnyOf;

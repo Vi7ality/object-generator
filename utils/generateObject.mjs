@@ -1,5 +1,3 @@
-// const generateDataFromSchema = require("./generateDataFromSchema");
-
 import { generateBoolean } from "./generateBoolean.mjs";
 import { generateDataFromSchema } from "./generateDataFromSchema.mjs";
 
@@ -19,5 +17,3 @@ export function generateObject(schema, rootSchema) {
 
   return result;
 }
-
-// module.exports = generateObject;

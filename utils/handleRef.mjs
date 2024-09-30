@@ -1,5 +1,3 @@
-// const generateDataFromSchema = require("./generateDataFromSchema");
-
 import { generateDataFromSchema } from "./generateDataFromSchema.mjs";
 
 export function handleRef(schema, rootSchema) {
@@ -8,7 +6,6 @@ export function handleRef(schema, rootSchema) {
   if (ref.startsWith("#")) {
     const path = ref.slice(1);
     let resolvedSchema = rootSchema;
-
     if (rootSchema.definitions && rootSchema.definitions[path]) {
       resolvedSchema = rootSchema.definitions[path];
     } else {
@@ -26,5 +23,3 @@ export function handleRef(schema, rootSchema) {
     throw new Error(`Unsupported $ref format: ${ref}`);
   }
 }
-
-// module.exports = handleRef;

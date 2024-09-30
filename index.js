@@ -1,14 +1,7 @@
-// const path = require("path");
 import path from "path";
-const schemaPath = path.resolve("./json-schema.json");
-// const { parseSchema, generateDataFromSchema } = require("./utils");
-// const parseSchema = require("./utils/parseSchema.mjs");
-
-// const generateDataFromSchema = require("./utils/generateDataFromSchema");
+const schemaPath = path.resolve("./schemas/json-schema.json");
 import { generateDataFromSchema } from "./utils/generateDataFromSchema.mjs";
 import { parseSchema } from "./utils/parseSchema.mjs";
-
-console.log(typeof parseSchema, typeof generateDataFromSchema);
 
 async function main() {
   try {

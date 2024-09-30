@@ -1,11 +1,4 @@
-// const generateAnyOf = require("./generateAnyOf");
-// const generateEnum = require("./generateEnum");
-// const generateObject = require("./generateObject");
-// const generateArray = require("./generateArray");
-// const generateString = require("./generateString");
-// const generateInteger = require("./generateInteger.js");
-// const generateBoolean = require("./generateBoolean.js");
-// const handleRef = require("./handleRef");
+
 
 import { generateAnyOf } from "./generateAnyOf.mjs";
 import { generateArray } from "./generateArray.mjs";
