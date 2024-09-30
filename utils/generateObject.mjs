@@ -14,6 +14,5 @@ export function generateObject(schema, rootSchema) {
       result[key] = generateDataFromSchema(propertySchema, rootSchema);
     }
   }
-
   return result;
 }

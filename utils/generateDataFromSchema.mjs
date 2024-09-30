@@ -1,5 +1,3 @@
-
-
 import { generateAnyOf } from "./generateAnyOf.mjs";
 import { generateArray } from "./generateArray.mjs";
 import { generateBoolean } from "./generateBoolean.mjs";
@@ -41,5 +39,3 @@ export function generateDataFromSchema(schema, rootSchema = schema) {
       throw new Error(`Unsupported type: ${schema.type}`);
   }
 }
-
-// module.exports = generateDataFromSchema;

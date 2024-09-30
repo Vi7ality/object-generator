@@ -8,9 +8,11 @@ export function generateArray(schema, rootSchema) {
   const result = [];
 
   for (let i = 0; i < length; i++) {
-    schema.items && result.push(generateDataFromSchema(schema.items, rootSchema));
-
-    result.push(generateString(schema));
+    if (schema.items) {
+      result.push(generateDataFromSchema(schema.items, rootSchema));
+    } else {
+      result.push(generateString(schema));
+    }
   }
 
   return result;

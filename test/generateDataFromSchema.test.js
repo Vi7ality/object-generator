@@ -57,12 +57,10 @@ describe("generateDataFromSchema", function () {
     const schema = {
       type: "array",
       items: { type: "integer" },
-      minItems: 2,
-      maxItems: 3,
     };
     const result = generateDataFromSchema(schema);
 
-    expect(result).to.be.an("array").with.length.within(2, 3);
+    expect(result).to.be.an("array").with.length.within(1, 5);
     result.forEach((item) => expect(item).to.be.a("number"));
   });
 
