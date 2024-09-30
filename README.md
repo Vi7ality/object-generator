@@ -30,31 +30,30 @@ To start using the app you need to have Node.js installed.
 To generate mock data based on a schema:
 
 ```bash
-node index.js
+npm start
 
 ```
 
-## Shema Example
+## Example Schema
 
-json-schema.json
-
+```json
 {
-"$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "id": { "type": "integer" },
     "name": { "type": "string" },
     "role": { "$ref": "#/definitions/role" },
-"permissions": {
-"type": "array",
-"items": { "enum": ["view", "modify", "sign", "execute"] }
+    "permissions": {
+      "type": "array",
+      "items": { "enum": ["view", "modify", "sign", "execute"] }
+    }
+  },
+  "definitions": {
+    "role": {
+      "type": "string",
+      "enum": ["admin", "user", "guest"]
+    }
+  }
 }
-},
-"definitions": {
-"role": {
-"type": "string",
-"enum": ["admin", "user", "guest"]
-}
-}
-...
-}
+```
